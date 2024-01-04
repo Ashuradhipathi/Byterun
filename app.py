@@ -609,7 +609,7 @@ print(c)
 
 
 def compile_and_run_code(source):
-    code_obj = compile(source, "<string>", "exec")
+    code_obj = input(">>")
     vm = VirtualMachine()
     vm.run_code(code_obj)
     return vm.return_value
